@@ -42,7 +42,7 @@ const HowItWorks = () => {
             />
 
             {/* Step number */}
-            <div className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-[#5AA4F4] text-[#5AA4F4] font-bold mb-4">
+            <div className="flex text-white items-center justify-center w-10 h-10 rounded-full border-2 border-[#5AA4F4] text-[#5AA4F4] font-bold mb-4">
               {step.id}
             </div>
 
