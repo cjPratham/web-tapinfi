@@ -83,33 +83,48 @@ const EcoSection = () => {
           <hr className="border-gray-600 mb-8" />
 
           {/* Stats */}
-          <div className="flex items-center justify-center gap-50">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
-              className="flex flex-col items-center"
-            >
-              <div className="bg-yellow-500 rounded-full p-4 w-20 h-20 flex items-center justify-center mb-3">
-                <img src={money} alt="Money icon" className="w-10" />
-              </div>
-              <p className="font-semibold">INR {Math.round(yearlySavings)}/year</p>
-              <span className="text-gray-400 text-sm">You Save</span>
-            </motion.div>
+          <div className="flex flex-wrap items-start justify-center gap-12 sm:gap-24">
+  {/* Savings Section */}
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.4 }}
+    className="flex flex-col items-center text-center min-w-[120px]"
+  >
+    <div className="bg-yellow-500 rounded-full p-4 w-20 h-20 flex items-center justify-center mb-3">
+      <img src={money} alt="Money icon" className="w-10" />
+    </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-col items-center"
-            >
-              <div className="bg-green-700 rounded-full p-4 w-20 h-20 flex items-center justify-center mb-3">
-                <img src={plant} alt="Plant icon" className="w-10" />
-              </div>
-              <p className="font-semibold">{treesSaved} Trees</p>
-              <span className="text-gray-400 text-sm">Saved</span>
-            </motion.div>
-          </div>
+    <div className="flex flex-col sm:flex-row sm:items-end justify-center leading-tight">
+      <span className="font-semibold text-lg sm:text-xl">
+        INR {Math.round(yearlySavings)}
+      </span>
+      <span className="text-sm sm:ml-1 text-gray-400">/year</span>
+    </div>
+
+    <span className="text-gray-400 text-sm mt-1">You Save</span>
+  </motion.div>
+
+  {/* Trees Saved Section */}
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: 0.2 }}
+    className="flex flex-col items-center text-center min-w-[120px]"
+  >
+    <div className="bg-green-700 rounded-full p-4 w-20 h-20 flex items-center justify-center mb-3">
+      <img src={plant} alt="Plant icon" className="w-10" />
+    </div>
+
+    <p className="font-semibold text-lg sm:text-xl leading-tight">
+      {treesSaved} Trees
+    </p>
+
+    <span className="text-gray-400 text-sm mt-1">Saved</span>
+  </motion.div>
+</div>
+
+
         </div>
 
         {/* Right Side Card */}

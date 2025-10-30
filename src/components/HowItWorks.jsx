@@ -33,27 +33,34 @@ const HowItWorks = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-6xl mx-auto">
         {steps.map((step) => (
-          <div key={step.id} className="flex flex-col items-center text-center">
-            {/* Image */}
-            <img
-              src={step.img}
-              alt={step.title}
-              className="mb-8 w-[260px] md:w-[300px] drop-shadow-[0_0_25px_rgba(90,164,244,0.5)]"
-            />
+          <div
+            key={step.id}
+            className="flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.03]"
+          >
+            {/* Image container to align all images equally */}
+            <div className="h-[260px] flex items-center justify-center mb-8">
+              <img
+                src={step.img}
+                alt={step.title}
+                className="max-h-[240px] w-auto object-contain drop-shadow-[0_0_25px_rgba(90,164,244,0.5)]"
+              />
+            </div>
 
             {/* Step number */}
-            <div className="flex text-white items-center justify-center w-10 h-10 rounded-full border-2 border-[#5AA4F4] text-[#5AA4F4] font-bold mb-4">
+            <div className="flex items-center justify-center w-10 h-10 rounded-full border-2 border-[#5AA4F4] text-[#5AA4F4] font-bold mb-4">
               {step.id}
             </div>
 
             {/* Title */}
             <h3 className="text-2xl font-semibold mb-3">{step.title}</h3>
 
-            {/* Line */}
+            {/* Decorative line */}
             <div className="w-16 h-[2px] bg-[#5AA4F4] mb-4"></div>
 
             {/* Description */}
-            <p className="text-gray-300 text-base leading-relaxed">{step.desc}</p>
+            <p className="text-gray-300 text-base leading-relaxed max-w-[320px]">
+              {step.desc}
+            </p>
           </div>
         ))}
       </div>

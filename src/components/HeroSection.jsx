@@ -29,7 +29,7 @@ const HeroSection = () => {
             </h1>
 
             <h2 className="text-[#5AA4F4] text-2xl sm:text-3xl font-semibold mb-6">
-              With a TapInfi Business Card
+              With a Tapinfi Business Card
             </h2>
 
             <p className="text-gray-300 text-lg sm:text-xl mb-10 leading-relaxed">
