@@ -46,7 +46,7 @@ const HeroSection = () => {
               rel="noopener noreferrer"
               className="
                 inline-flex items-center justify-center gap-2
-                px-6 py-3 sm:px-8 sm:py-4 mb-4 md:px-10 md:py-4
+                px-6 py-3 sm:px-8 sm:py-4 mb-25 md:px-10 md:py-4
                 text-base sm:text-lg md:text-lg
                 bg-gradient-to-r from-[#0E2D6E] to-[#5AA4F4]
                 rounded-full font-semibold text-white

@@ -19,10 +19,14 @@ const EcoSection = () => {
     <section className="relative bg-gradient-to-b from-[#0B0428] to-[#0E1A3C] text-white py-24 px-6 md:px-16 overflow-hidden">
       <div className="text-center flex flex-col items-center justify-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold mb-2">
-          Networking Made Eco-friendly
+          Networking Made 
+          <br className="block md:hidden" /> {/* Visible only on small screens */}
+          <span className="hidden md:inline"> </span> {/* Adds space when br is hidden */}
+          Eco-friendly
         </h2>
         <p className="text-blue-400 mb-8">Try it now!</p>
       </div>
+
 
       {/* Background glow */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-800/20 rounded-full blur-[180px]" />
