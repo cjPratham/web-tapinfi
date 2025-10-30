@@ -114,7 +114,7 @@ const EcoSection = () => {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="relative rounded-3xl overflow-hidden shadow-[0_0_60px_rgba(0,255,204,0.2)]"
+            className="relative rounded-4xl overflow-hidden shadow-[0_0_60px_rgba(0,255,204,0.2)]"
           >
             <img
               src={jungle}

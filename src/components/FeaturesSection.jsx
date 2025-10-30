@@ -103,9 +103,15 @@ const FeaturesSection = () => {
             </ul>
 
             {/* Glowing CTA Button */}
-            <button className="mt-8 px-8 py-3 flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full text-white font-semibold shadow-[0_0_25px_rgba(0,140,255,0.6)] hover:shadow-[0_0_40px_rgba(0,180,255,0.8)] transition-all">
+            <a
+              href="https://wa.me/message/QGIGIPI4Q7XJG1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-8 inline-flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full text-white font-semibold shadow-[0_0_25px_rgba(0,140,255,0.6)] hover:shadow-[0_0_40px_rgba(0,180,255,0.8)] transition-all"
+            >
               Get Started <ArrowRight size={18} />
-            </button>
+            </a>
+
           </div>
         </div>
       </section>

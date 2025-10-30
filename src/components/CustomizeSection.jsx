@@ -39,13 +39,15 @@ const CustomizeSection = () => {
             easier than ever to create a card that truly represents you.
           </p>
 
-          <motion.button
+          <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            href="https://wa.me/message/QGIGIPI4Q7XJG1"
+            target="_blank"
             className="bg-gradient-to-r from-[#0E2D6E] to-[#5AA4F4] px-8 py-3 rounded-full text-sm font-semibold shadow-[0_0_25px_rgba(90,164,244,0.6)] hover:shadow-[0_0_40px_rgba(90,164,244,0.8)] transition-all"
           >
             DESIGN YOUR CARD
-          </motion.button>
+          </motion.a>
         </motion.div>
       </div>
     </section>

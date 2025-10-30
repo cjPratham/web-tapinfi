@@ -50,7 +50,8 @@ const Navbar = () => {
   </a>
 
   <a
-    href="#contact"
+    href="https://wa.me/message/QGIGIPI4Q7XJG1"
+    target="_blank"
     className="hover:text-[#5AA4F4] hover:drop-shadow-[0_0_6px_#5AA4F4] transition duration-300"
     onClick={() => setMenuOpen(false)}
   >
