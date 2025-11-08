@@ -17,12 +17,23 @@ const Navbar = () => {
         <a href="#home" className="hover:text-[#5AA4F4] transition">
           HOME
         </a>
-        <a href="#contact" className="hover:text-[#5AA4F4] transition">
+        <a href="https://forms.gle/JMwyPXWWB9WrSBbK9" target="_blank" className="hover:text-[#5AA4F4] transition">
           CONTACT US
         </a>
-        <button className="border border-white/30 px-8 py-2 rounded-full hover:bg-white/10 transition">
+
+        <a
+        href="https://tapinfi.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button
+          className="border border-white/30 px-8 py-2 rounded-full 
+          hover:bg-white/10 transition"
+        >
           LOGIN
         </button>
+      </a>
+
       </div>
 
       {/* Mobile Menu Button */}
@@ -50,7 +61,7 @@ const Navbar = () => {
   </a>
 
   <a
-    href="https://wa.me/message/QGIGIPI4Q7XJG1"
+    href="https://forms.gle/JMwyPXWWB9WrSBbK9"
     target="_blank"
     className="hover:text-[#5AA4F4] hover:drop-shadow-[0_0_6px_#5AA4F4] transition duration-300"
     onClick={() => setMenuOpen(false)}
@@ -58,13 +69,20 @@ const Navbar = () => {
     CONTACT US
   </a>
 
+ <a
+  href="https://tapinfi.vercel.app/"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => setMenuOpen(false)}
+>
   <button
     className="border border-white/30 px-8 py-2 rounded-full 
     hover:bg-[#5AA4F4]/10 hover:shadow-[0_0_10px_#5AA4F4] transition duration-300"
-    onClick={() => setMenuOpen(false)}
   >
     LOGIN
   </button>
+</a>
+
 </div>
 
       )}
